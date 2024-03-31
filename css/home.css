@@ -113,3 +113,28 @@
     background: #153954;
     opacity: .8;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: 600px;
+    }
+    .home-content h1 {
+        font-size: 24px; 
+    }
+    .home-content p {
+        max-width: 275px;
+    }
+    .btn-box a {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+    .home-content .btn-box {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+        height: 35px;
+        margin-top: 10px;
+    }
+}

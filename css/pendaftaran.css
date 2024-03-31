@@ -1,0 +1,87 @@
+.card {
+    background-color: #143e5f; 
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 8%;
+    margin-bottom: 3%;
+    max-width: 500px;
+    margin-left: 100px; 
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #143e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #254c69;
+}
+
+button[type="reset"] {
+    background-color: #143e5f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="reset"]:hover {
+    background-color: #254c69;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 20px;
+        margin-top: 45%;
+        margin-bottom: 2%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    select {
+        margin-bottom: 10px;
+    }
+}

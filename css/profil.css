@@ -51,3 +51,19 @@
 .profile-info td:last-child {
     width: 70%;
 }
+
+@media screen and (max-width: 768px) {
+    .profile-card {
+        margin-top: 7%;
+        flex-direction: column; 
+    }
+
+    .profile-img,
+    .profile-info {
+        width: 100%; 
+    }
+
+    .profile-info {
+        padding-top: 0; 
+    }
+}
