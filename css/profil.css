@@ -1,0 +1,53 @@
+/* untuk profile */
+
+.profile {
+    padding: 70px 10% 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #143e5f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+    flex: 1;
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.profile-info {
+    flex: 3;
+    text-align: left;
+    padding: 20px;
+}
+
+.profile-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.profile-info td {
+    padding: 8px 0;
+}
+
+.profile-info td:first-child {
+    font-weight: bold;
+    width: 30%;
+}
+
+.profile-info td:last-child {
+    width: 70%;
+}
