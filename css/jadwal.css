@@ -152,10 +152,13 @@
 }
 
 @media screen and (max-width: 600px) {
-    .jadwal {
-        margin: 50px auto;
+    h1 {
+        text-align: center;
+        position: relative;
     }
+    
     .jadwal::after {
+        margin-top: 35px;
         left: 31px;
     }
     .container-jadwal {
@@ -178,7 +181,7 @@
         top: 32px; 
     }
     
-    .container-jadwal .kiri .s-icon {
+    .container-jadwal .kanan .s-icon {
         right: auto; 
         left: -15px; 
         top: 32px; 

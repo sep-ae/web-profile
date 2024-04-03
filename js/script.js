@@ -1,11 +1,12 @@
-function myFunction() {
-    var x = document.getElementById("myNav");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const listMenu = document.querySelector(".list-nav");
+    const nav = document.querySelector(".nav");
+
+    listMenu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+});
+
 
 window.addEventListener('DOMContentLoaded', (event) => {
     adjustFooterPosition();
