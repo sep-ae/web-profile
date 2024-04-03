@@ -1,195 +1,52 @@
 /* untuk jadwal mumet */
 
 .jadwal {
-    position: relative;
-    max-width: 1020px;
-    margin: 100px auto;
-}
-
-.jadwal h1 {
-    font-size: 24px; 
-    margin-bottom: 50px; 
-    color: #ededed; 
-}
-.container-jadwal {
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-    animation: movedown 1s linear forwards;
-    opacity: 0;
-}
-
-@keyframes movedown {
-    0%{
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-.container-jadwal:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.container-jadwal:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.container-jadwal:nth-child(3) {
-    animation-delay: 2s;
-}
-
-.container-jadwal:nth-child(4) {
-    animation-delay: 3s;
-}
-
-.container-jadwal:nth-child(5) {
-    animation-delay: 4s;
-}
-
-.text-box {
-    padding: 20px 30px;
-    color: #081b29;
-    background: #ededed;
-    position: relative;
-    border-radius: 6px;
-    font-size: 15px;  
     display: flex;
-    flex-direction: column;
-}
-
-.kiri {
-    left: 0;
-}
-
-.kanan {
-    left: 50%;
-}
-
-.s-icon {
-    position: absolute;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #081b29;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    right: -15px;
-    top: 32px;
-    z-index: 10;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
-.kanan .s-icon {
-    left: -15px;
+.tabel-jadwal {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.jadwal::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 100%;
-    background: #ededed;
-    top: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -1;
-    animation: moveline 6s linear forwards;
+.tabel-jadwal thead tr {
+    background-color: #153954;
+    color: #ededed;
+    text-align: left;
 }
 
-@keyframes moveline {
-    0%{
-        height: 0;
-    }
-    100%{
-        height: 100%;
-    }
+.tabel-jadwal th,
+.tabel-jadwal td {
+    padding: 12px 15px;
 }
 
-.text-box h2 {
-    font-weight: 600;
+.tabel-jadwal tbody tr{
+    background-color: #67C6E3;
+    color: black;
+}
+.tabel-jadwal tbody tr {
+    border-bottom: 1px solid #ededed;
 }
 
-.text-box h3 {
-    margin-top: 0; 
+.tabel-jadwal tbody tr:nth-of-type(even) {
+    color: black;
+    background-color: #B3C8CF;
 }
 
-.text-box small {
-    display: inline-block;
-    align-items: center; 
-    margin-bottom: 10px; 
-}
-
-.text-box small i {
-    margin-right: 5px; 
-}
-
-.panah-kiri {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 22px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid #ededed;
-    right: -15px;
-}
-
-.panah-kanan {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 22px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid #ededed;
-    left: -15px;
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        text-align: center;
-        position: relative;
+@media screen and (max-width: 768px) {
+    .tabel-jadwal {
+        font-size: 0.8em; 
     }
-    
-    .jadwal::after {
-        margin-top: 35px;
-        left: 31px;
-    }
-    .container-jadwal {
-        width: 100%;
-        padding-left: 50px;
-        padding-right: 25px;
-    }
-    .text-box {
-        font-size: 12px;
-    }
-    .text-box small {
-        margin-bottom: 10px;
-    }
-    .kanan, .kiri {
-        left: 0;
-    }
-    .s-icon {
-        right: auto;
-        left: 15px; 
-        top: 32px; 
-    }
-    
-    .container-jadwal .kanan .s-icon {
-        right: auto; 
-        left: -15px; 
-        top: 32px; 
-    }
-
-    .panah-kanan, .panah-kiri {
-        border-right: 15px solid #ededed;
-        border-left: 0;
-        left: 15px;
+    .tabel-jadwal th,
+    .tabel-jadwal td {
+        padding: 8px 10px; 
     }
 }
